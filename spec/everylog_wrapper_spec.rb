@@ -5,7 +5,11 @@ RSpec.describe EverylogWrapper do
     expect(EverylogWrapper::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(true).to eq(true)
+  describe EverylogWrapper::Notification do
+    describe "sendnotification" do
+      it "returns a response" do
+      end
+    end
   end
 end
+
