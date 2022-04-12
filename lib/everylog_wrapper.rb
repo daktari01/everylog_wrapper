@@ -23,7 +23,7 @@ module EverylogWrapper
 
     def send_notification
       api_key = ENV["EVERYLOG_KEY"]
-      everylog_url = ENV["EVERYLOG_URL"]
+      everylog_url = "https://api.everylog.io/api/v1/log-entries"
       body = {
         projectId: "menuclick24",
         title: @title,
