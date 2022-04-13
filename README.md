@@ -14,9 +14,29 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install everylog_wrapper
 
+Set an environment variable called `EVERYLOG_KEY` which should contain your Everylog API key.
+
 ## Usage
 
-TODO: Write usage instructions here
+The `project_id`, `title`, `summary` and `body` are mandatory fields, while `tags`, `link` and `push` are optional.
+
+```
+EverylogWrapper.send_notification(
+        project_id: 'myProject'
+        title: 'Lorem',
+        summary: 'Lorem ipsum',
+        body: 'Lorem ipsum dolor sit amet'
+      )
+```
+
+### Fields and their data types:
+ - project_id - String
+ - title - String
+ - summary - String
+ - body - String
+ - tags - Array
+ - link - String
+ - push - Boolean
 
 ## Development
 
@@ -26,7 +46,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/everylog_wrapper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/everylog_wrapper/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/daktari01/everylog_wrapper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/everylog_wrapper/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

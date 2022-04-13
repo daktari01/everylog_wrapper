@@ -12,4 +12,3 @@ RSpec.describe EverylogWrapper do
     end
   end
 end
-
